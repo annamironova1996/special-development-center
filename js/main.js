@@ -89,47 +89,62 @@ $(document).ready(function () {
         });
 
     //слайдер блок - "лицензии и сертификаты"
-    const certificatesListSwiper = new Swiper('.certificates-list-swiper', {
-        slidesPerView: 1.4,
-        spaceBetween: 6,
-        navigation: {
-            nextEl: '.certificates-list-btn-next',
-            prevEl: '.certificates-list-btn-prev',
-        },
-        breakpoints: {
-            1091: {
-                slidesPerView: 4,
-                spaceBetween: 16,
-            },
-            701: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-            },
-            531: {
-                slidesPerView: 2,
+    $(document).ready(function () {
+        $('.certificates-list-swiper').each(function (index) {
+            const $swiper = $(this);
+
+            const $container = $swiper.closest('.container');
+            const $nextBtn = $container.find('.certificates-btn-next');
+            const $prevBtn = $container.find('.certificates-btn-prev');
+
+            new Swiper(this, {
+                slidesPerView: 1.4,
                 spaceBetween: 6,
-            },
-        },
+                navigation: {
+                    nextEl: $nextBtn[0] || null,
+                    prevEl: $prevBtn[0] || null,
+                },
+                breakpoints: {
+                    1091: {
+                        slidesPerView: 4,
+                        spaceBetween: 16,
+                    },
+                    701: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    531: {
+                        slidesPerView: 2,
+                        spaceBetween: 6,
+                    },
+                },
+            });
+        });
     });
 
     //слайдер блок - "новости"
-    const newsSwiper = new Swiper('.news-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 8,
-        navigation: {
-            nextEl: '.news-btn-next',
-            prevEl: '.news-btn-prev',
-        },
-        breakpoints: {
-            1131: {
-                slidesPerView: 3,
-                spaceBetween: 16,
+    $('.news-swiper').each(function () {
+        const $swiper = $(this);
+        const $container = $swiper.closest('.container');
+
+        new Swiper(this, {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+            navigation: {
+                nextEl: $container.find('.swiper-btn-next')[0],
+                prevEl: $container.find('.swiper-btn-prev')[0],
             },
-            701: {
-                slidesPerView: 2,
-                spaceBetween: 16,
+            breakpoints: {
+                1131: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                701: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
             },
-        },
+        });
     });
 
     //слайдер блок - "Фотогалерея - 1"
@@ -193,16 +208,35 @@ $(document).ready(function () {
     });
 
     //открытие и закрытие модального окна
-    $('[data-id]').on('click', function () {
-        let elementId = `#${$(this).attr('data-id')}`;
+    $('[data-id]').on('click', function (e) {
+        const id = $(this).attr('data-id');
+        const elementId = `#${id}`;
+
         $(elementId).addClass('active');
+
         if ($('.header-bottom').hasClass('active')) {
             $('.header-bottom').removeClass('active');
-            $('.header').removeClass('active');
-            $('.header').addClass('no-active');
+            $('.header').removeClass('active').addClass('no-active');
             $('.header-top__mobile-btn').removeClass('close');
         }
+
+        if (id !== 'presentation') {
+            $('.presentation-modal').removeClass('active');
+        }
+
+        e.stopPropagation();
     });
+    $(document).on('click', function (e) {
+        const $modal = $('.presentation-modal');
+
+        if ($modal.hasClass('active') && !$modal.is(e.target) && $modal.has(e.target).length === 0) {
+            $modal.removeClass('active');
+        }
+    });
+    $('.presentation-modal').on('click', function (e) {
+        e.stopPropagation();
+    });
+
     $('body').on('click', '.modal-close', function () {
         $(this).closest('.modal').removeClass('active');
     });
@@ -431,7 +465,7 @@ $(document).ready(function () {
         if (innerWidth <= 1130) {
             var top = $(id).offset().top - 200; // получаем координаты блока
         }
-        if (innerWidth <= 430) {
+        if (innerWidth <= 480) {
             var top = $(id).offset().top - 180; // получаем координаты блока
         }
 
@@ -511,6 +545,104 @@ $(document).ready(function () {
             }, 400);
         }
     });
+
+    $('.slider').each(function (index) {
+        var $slider = $(this);
+
+        var $nextBtn = $slider.find('.slider__button-next');
+        var $prevBtn = $slider.find('.slider__button-prev');
+        var $pagination = $slider.find('.slider-swiper-pagination');
+
+        new Swiper(this, {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: $nextBtn[0],
+                prevEl: $prevBtn[0],
+            },
+            effect: 'fade',
+            pagination: {
+                el: $pagination[0],
+                clickable: true,
+            },
+        });
+    });
+
+    const scopeSwiper = new Swiper('.scope-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.scope-btn-next',
+            prevEl: '.scope-btn-prev',
+        },
+        breakpoints: {
+            1171: {
+                slidesPerView: 3,
+                spaceBetween: 12,
+            },
+        },
+    });
+    const partnersSwiper = new Swiper('.partners-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+        navigation: {
+            nextEl: '.partners-btn-next',
+            prevEl: '.partners-btn-prev',
+        },
+        speed: 5000,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            701: {
+                spaceBetween: 16,
+            },
+        },
+    });
+
+    const aboutSwiper = new Swiper('.about-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.about-btn-next',
+            prevEl: '.about-btn-prev',
+        },
+        pagination: {
+            el: '.about-swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            701: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+        },
+    });
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    if (!partnersSwiper.autoplay.running) {
+                        partnersSwiper.autoplay.start();
+                    }
+                } else {
+                    if (partnersSwiper.autoplay.running) {
+                        partnersSwiper.autoplay.stop();
+                    }
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+        }
+    );
+
+    const swiperElement = document.querySelector('.partners-swiper');
+    if (swiperElement) {
+        observer.observe(swiperElement);
+    }
 });
 
 let animationElement = document.querySelector('.animation-element');
@@ -519,9 +651,7 @@ function animation() {
     let animationElementInner = document.querySelector('.animation-element__inner');
     let animationElementStatic = document.querySelector('.animation-element__static');
     let animationElementMovement = document.querySelector('.animation-element__movement');
-    let animationElementMovementIcon = document.querySelectorAll(
-        '.animation-element__movement-icon'
-    );
+    let animationElementMovementIcon = document.querySelectorAll('.animation-element__movement-icon');
 
     let animationElementMovementIconLast = document.querySelector('.last');
 
@@ -546,9 +676,7 @@ function animation() {
                 animationElementMovementIcon[i].classList.add('active');
                 if (animationElementMovementIcon[i].classList.contains('active')) {
                     if (animationElementMovementIcon[i].previousElementSibling) {
-                        animationElementMovementIcon[i].previousElementSibling.classList.add(
-                            'no-active'
-                        );
+                        animationElementMovementIcon[i].previousElementSibling.classList.add('no-active');
                     }
                 }
             }, i * time);

@@ -17,8 +17,7 @@
             async function initMap() {
                 await ymaps3.ready;
 
-                const { YMap, YMapDefaultSchemeLayer, YMapMarker, YMapDefaultFeaturesLayer } =
-                    ymaps3;
+                const { YMap, YMapDefaultSchemeLayer, YMapMarker, YMapDefaultFeaturesLayer } = ymaps3;
 
                 const map = new YMap(document.getElementById('app'), {
                     location: {
@@ -1913,16 +1912,7 @@
                             {
                                 tags: {
                                     any: 'urban_area',
-                                    none: [
-                                        'residential',
-                                        'industrial',
-                                        'cemetery',
-                                        'park',
-                                        'medical',
-                                        'sports_ground',
-                                        'beach',
-                                        'construction_site',
-                                    ],
+                                    none: ['residential', 'industrial', 'cemetery', 'park', 'medical', 'sports_ground', 'beach', 'construction_site'],
                                 },
                                 elements: 'geometry',
                                 stylers: [
@@ -5983,12 +5973,7 @@
                             {
                                 tags: {
                                     any: 'transit',
-                                    none: [
-                                        'transit_location',
-                                        'transit_line',
-                                        'transit_schema',
-                                        'is_unclassified_transit',
-                                    ],
+                                    none: ['transit_location', 'transit_line', 'transit_schema', 'is_unclassified_transit'],
                                 },
                                 elements: 'geometry',
                                 stylers: [
@@ -6662,9 +6647,7 @@
                             <div class="header-top__site">
                                 Наш основной сайт:
 
-                                <a href="#!" class="header-top__site-link" target="_blank"
-                                    >ЦГРиСР</a
-                                >
+                                <a href="#!" class="header-top__site-link" target="_blank">ЦГРиСР</a>
                             </div>
                             <div class="header-top__mobile">
                                 <button type="button" class="header-top__mobile-btn">
@@ -6685,54 +6668,26 @@
                             </div>
                             <div class="header-top__info">
                                 <div class="header-top__info-wrap header-top__info-hover">
-                                    <svg
-                                        width="22"
-                                        height="22"
-                                        viewBox="0 0 22 22"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M8.5851 9.79193C9.4435 11.3014 10.6986 12.5565 12.2081 13.4149L13.0189 12.2798C13.2885 11.9025 13.7973 11.7859 14.2043 12.0082C15.4939 12.7126 16.919 13.1407 18.4057 13.2584C18.8824 13.2962 19.25 13.694 19.25 14.1722V18.2631C19.25 18.7331 18.8945 19.1269 18.427 19.1749C17.9413 19.2249 17.4512 19.25 16.9583 19.25C9.11129 19.25 2.75 12.8887 2.75 5.04167C2.75 4.54875 2.77514 4.05873 2.82507 3.57295C2.87311 3.10544 3.26695 2.75 3.73693 2.75H7.8278C8.30601 2.75 8.70387 3.11762 8.74161 3.59433C8.85928 5.08097 9.28739 6.50617 9.99185 7.79574C10.2141 8.2027 10.0975 8.71158 9.72024 8.98111L8.5851 9.79193ZM6.2739 9.18977L8.01552 7.94575C7.52168 6.87971 7.18326 5.74918 7.01 4.58333H4.59165C4.58611 4.73579 4.58333 4.88858 4.58333 5.04167C4.58333 11.8762 10.1239 17.4167 16.9583 17.4167C17.1114 17.4167 17.2642 17.4139 17.4167 17.4083V14.99C16.2509 14.8167 15.1203 14.4783 14.0542 13.9845L12.8102 15.7262C12.307 15.5306 11.821 15.3005 11.3551 15.0389L11.3019 15.0086C9.50556 13.9871 8.0129 12.4944 6.99142 10.6981L6.96111 10.6449C6.69945 10.179 6.46941 9.69302 6.2739 9.18977Z"
                                             fill="#0D071E"
                                         />
                                     </svg>
-                                    <a href="tel:88129848800" class="header-top__info-link"
-                                        >8 812 984 88 00</a
-                                    >
+                                    <a href="tel:88129848800" class="header-top__info-link">8 812 984 88 00</a>
                                 </div>
                                 <div class="header-top__info-wrap">
                                     <div class="header-top__info-icons">
-                                        <a
-                                            href="https://web.telegram.org/"
-                                            class="header-top__info-telegram"
-                                            target="_blank"
-                                        >
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
+                                        <a href="https://web.telegram.org/" class="header-top__info-telegram" target="_blank">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM10.3584 7.38246C9.3857 7.78702 7.4418 8.6244 4.5266 9.8945C4.05321 10.0827 3.80524 10.2669 3.78266 10.4469C3.74451 10.7513 4.12561 10.8711 4.64458 11.0343C4.71517 11.0565 4.78832 11.0795 4.8633 11.1039C5.37388 11.2698 6.06071 11.464 6.41776 11.4717C6.74164 11.4787 7.10313 11.3452 7.50222 11.0711C10.226 9.2325 11.632 8.3032 11.7203 8.2832C11.7826 8.269 11.8689 8.2513 11.9273 8.3032C11.9858 8.3552 11.98 8.4536 11.9739 8.48C11.9361 8.641 10.4401 10.0318 9.6659 10.7515C9.4351 10.9661 9.2101 11.1853 8.9833 11.4039C8.509 11.8611 8.1533 12.204 9.003 12.764C9.8644 13.3317 10.7323 13.8982 11.5724 14.4971C11.9867 14.7925 12.359 15.0579 12.8188 15.0156C13.0861 14.991 13.3621 14.7397 13.5022 13.9903C13.8335 12.2193 14.4847 8.3821 14.6352 6.80083C14.6484 6.6623 14.6318 6.485 14.6185 6.40717C14.6052 6.32934 14.5773 6.21844 14.4762 6.13635C14.3563 6.03913 14.1714 6.01863 14.0887 6.02009C13.7125 6.02672 13.1355 6.22737 10.3584 7.38246Z"
                                                     fill="#0D071E"
                                                 />
                                             </svg>
                                         </a>
-                                        <a
-                                            href="https://web.whatsapp.com/"
-                                            class="header-top__info-whatsapp"
-                                            target="_blank"
-                                        >
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
+                                        <a href="https://web.whatsapp.com/" class="header-top__info-whatsapp" target="_blank">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"
                                                     fill="#0D071E"
@@ -6743,21 +6698,10 @@
                                     <p>8 962 684 88 00</p>
                                 </div>
                                 <div class="header-top__info-wrap header-top__info-hover">
-                                    <svg
-                                        width="22"
-                                        height="22"
-                                        viewBox="0 0 22 22"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M19.25 2.75C19.7563 2.75 20.1667 3.16041 20.1667 3.66667V18.3394C20.1667 18.8423 19.7493 19.25 19.2575 19.25H2.74248C2.24038 19.25 1.83333 18.8422 1.83333 18.3394V17.4167H18.3333V6.69167L11 13.2917L1.83333 5.04167V3.66667C1.83333 3.16041 2.24374 2.75 2.75 2.75H19.25ZM7.33333 13.75V15.5833H0V13.75H7.33333ZM4.58333 9.16667V11H0V9.16667H4.58333ZM17.9354 4.58333H4.06463L11 10.8252L17.9354 4.58333Z"
-                                            fill="#0D071E"
-                                        />
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.25 2.75C19.7563 2.75 20.1667 3.16041 20.1667 3.66667V18.3394C20.1667 18.8423 19.7493 19.25 19.2575 19.25H2.74248C2.24038 19.25 1.83333 18.8422 1.83333 18.3394V17.4167H18.3333V6.69167L11 13.2917L1.83333 5.04167V3.66667C1.83333 3.16041 2.24374 2.75 2.75 2.75H19.25ZM7.33333 13.75V15.5833H0V13.75H7.33333ZM4.58333 9.16667V11H0V9.16667H4.58333ZM17.9354 4.58333H4.06463L11 10.8252L17.9354 4.58333Z" fill="#0D071E" />
                                     </svg>
-                                    <a href="mailto:it@cgrsr.ru" class="header-top__info-link"
-                                        >it@cgrsr.ru</a
-                                    >
+                                    <a href="mailto:it@cgrsr.ru" class="header-top__info-link">it@cgrsr.ru</a>
                                 </div>
                             </div>
                         </div>
@@ -6769,7 +6713,7 @@
                             <div class="header-bottom__wrap">
                                 <div class="header-bottom__menu">
                                     <a href="index.html" class="header-logo">
-                                        <img src="./images/logo.webp" alt="логотип" />
+                                        <img src="./images/logo.webp" alt="логотип" width="102" height="118" />
                                     </a>
                                     <nav class="header-bottom__nav">
                                         <ul class="header-bottom__list">
@@ -6783,10 +6727,7 @@
                                                 <a href="#!">Разминирование</a>
                                             </li>
                                             <li>
-                                                <a href="bso.html">БСО</a>
-                                            </li>
-                                            <li>
-                                                <a href="cooperation.html">Сотрудничество</a>
+                                                <a href="cooperation.html">Партнеры</a>
                                             </li>
                                             <li>
                                                 <a href="about.html">О компании</a>
@@ -6804,22 +6745,9 @@
                                     </select>
                                 </div>
                                 <div class="header-bottom__buttons">
-                                    <button
-                                        type="button"
-                                        class="header-btn violet-btn"
-                                        data-id="call"
-                                    >
-                                        Заказать звонок
-                                    </button>
-                                    <a href="#!" class="header-btn violet-btn"
-                                        >Скачать бланк заявки</a
-                                    >
-                                    <a
-                                        href="#!"
-                                        class="header-btn violet-btn"
-                                        data-id="presentation"
-                                        >Скачать презентацию</a
-                                    >
+                                    <button type="button" class="header-btn violet-btn" data-id="call">Заказать звонок</button>
+                                    <a href="#!" class="header-btn violet-btn">Скачать бланк заявки</a>
+                                    <a href="#!" class="header-btn violet-btn" data-id="presentation">Скачать презентацию</a>
                                 </div>
                             </div>
                         </div>
@@ -6849,23 +6777,16 @@
                     <div class="header-banner__inner header-banner__inner--main">
                         <div class="header-banner__content">
                             <div class="header-banner__content-wrap">
-                                <h1 class="header-banner__content-title">
-                                    Центр гуманитарного разминирования и&nbsp;специальных разработок
-                                </h1>
-                                <p class="header-banner__content-subtitle">
-                                    Обучение и подготовка разминированию в новых информационных
-                                    технологиях VR
-                                </p>
+                                <h1 class="header-banner__content-title">Центр гуманитарного разминирования и&nbsp;специальных разработок</h1>
+                                <p class="header-banner__content-subtitle">VR-технологии по обучению основам безопасности</p>
                                 <ul class="header-banner__content-list">
-                                    <li>Тренажер-симулятор разминирования в VR</li>
-                                    <li>Учебный центр</li>
+                                    <li>Тренажер-симуляторы в VR / AR / XR</li>
+                                    <li>Учебное кибер-пространство в VR / AR / XR</li>
+                                    <li>Разработка программного обеспечения (ПО)</li>
                                     <li>Гуманитарное разминирование</li>
-                                    <li>Безопасная среда обитания</li>
                                 </ul>
                             </div>
-                            <button type="button" class="header-banner__content-btn" data-id="bid">
-                                Оставить заявку
-                            </button>
+                            <button type="button" class="header-banner__content-btn" data-id="bid">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
@@ -6879,121 +6800,76 @@
                         <div class="services-item">
                             <div class="services-item__info">
                                 <div class="services-item__info-content">
-                                    <h3 class="services-item__title">
-                                        Тренажер-симулятор <br />
-                                        <span style="color: #726ce6">кибер-сапер</span>
-                                        для разминирования в VR технологиях
-                                    </h3>
+                                    <h3 class="services-item__title">Учебные программы в VR / AR / XR</h3>
                                     <div class="services-item__text">
-                                        <p>
-                                            Данная программа осуществляет полное погружение в
-                                            виртуальную реальность и позволяет ознакомиться, а также
-                                            пройти обучение по выполнению задач разминирования.
-                                            Тренажер- симулятор предоставляет подробные инструкции,
-                                            процесс происходит в интерактивной игре, где по
-                                            окончанию происходит оценка полученных знаний.
-                                        </p>
+                                        <ul>
+                                            <li>Обучение и подготовка специалистов по разминированию.</li>
+                                            <li>Совершенствования навыков начальной военной и общевойсковой подготовки.</li>
+                                            <li>Изучения основ безопасности и защиты Родины.</li>
+                                            <li>Проведения профилактических мероприятий среди гражданского населения по безопасному обращению с взрывоопасными предметами.</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <a
-                                    href="services.html#service-1"
-                                    class="violet-btn min-btn services-item__link"
-                                    >Подробнее</a
-                                >
+                                <a href="service-1.html" class="violet-btn min-btn services-item__link">Подробнее</a>
                             </div>
-                            <!-- рекомендуемый размер изображения 618px х 352px -->
-                            <img
-                                class="services-item__image"
-                                src="./images/services-image-1.webp"
-                                alt="изображение"
-                            />
-                        </div>
-                        <div class="services-item">
-                            <!-- рекомендуемый размер изображения 618px х 352px -->
-                            <img
-                                class="services-item__image"
-                                src="./images/services-image-2.webp"
-                                alt="изображение"
-                            />
-                            <div class="services-item__info">
-                                <div class="services-item__info-content">
-                                    <h3 class="services-item__title">
-                                        организация учебного пространства с VR технологиями на
-                                        территории Заказчика
-                                    </h3>
-                                    <div class="services-item__text">
-                                        <p>
-                                            Центр гуманитарного разминирования и&nbsp;Специальных
-                                            разработок организует на&nbsp;территории Заказчика
-                                            учебное пространство с применением инновационных VR
-                                            технологий, а также выезд наших технических специалистов
-                                            и&nbsp;дальнейшее технико-консультационное
-                                            сопровождение.
-                                        </p>
+                            <div class="services-item__swiper slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="services-item__slide">
+                                            <img src="./images/services-item__slide-image-1.webp" alt="изображение" width="618" height="352" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="services-item__slide">
+                                            <img src="./images/services-item__slide-image-2.webp" alt="изображение" width="618" height="352" />
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="services.html#service-2" class="violet-btn min-btn"
-                                    >Подробнее</a
-                                >
+                                <div class="slider__buttons">
+                                    <button type="button" class="slider__button slider__button-prev">
+                                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.93549 13.7903L1.64516 7.91932L7.93549 1.62899" stroke="#0D071E" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="slider__button slider__button-next">
+                                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.64516 1.62915L7.93548 7.50012L1.64516 13.7904" stroke="#0D071E" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="slider-swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="services-item">
+                            <img class="services-item__image" src="./images/services-image-2.webp" alt="изображение" width="618" height="352" />
                             <div class="services-item__info">
                                 <div class="services-item__info-content">
-                                    <h3 class="services-item__title">
-                                        Индивидуальные и групповые курсы в учебном центре
-                                    </h3>
-                                    <div class="services-item__text services-item__text--max">
-                                        <p>
-                                            Повышение квалификации и профессиональная переподготовка
-                                            специалистов по разминированию. Наш Центр проводит
-                                            теоретическую и практическую подготовку опытными
-                                            действующими специалистами в этой области.
-                                        </p>
+                                    <h3 class="services-item__title">Учебное пространство VR / AR / XR</h3>
+                                    <div class="services-item__text">
+                                        <p>Организация учебного пространства с применением иммерсивных технологий VR на территории заказчика.</p>
+                                        <ul>
+                                            <li>Интерактивный учебный кибер-класс</li>
+                                            <li>Учебный модуль КиберШаг</li>
+                                            <li>Тренажер-симулятор</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <a href="services.html#service-3" class="violet-btn min-btn"
-                                    >Подробнее</a
-                                >
+                                <a href="service-2.html" class="violet-btn min-btn services-item__link">Подробнее</a>
                             </div>
-                            <!-- рекомендуемый размер изображения 618px х 352px -->
-                            <img
-                                class="services-item__image"
-                                src="./images/services-image-3.webp"
-                                alt="изображение"
-                            />
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="main-bso section">
-                <div class="container">
-                    <div class="grid-container">
-                        <div class="grid-item">
-                            <h2 class="title">БСО</h2>
-                            <p class="main-bso__subtitle">Безопасная среда обитания</p>
-                        </div>
-                        <div class="grid-item">
-                            <div class="main-bso__text">
-                                <p>
-                                    Центр гуманитарного разминирования и Специальных разработок
-                                    осуществляет помощь в повышении знаний в области обнаружения
-                                    взрывоопасных предметов среди гражданского населения, а также
-                                    взаимодействует с представителями органов государственной власти
-                                    по&nbsp;вопросам безопасности и антитеррористической угрозе.
-                                </p>
+                        <div class="services-item">
+                            <div class="services-item__info">
+                                <div class="services-item__info-content">
+                                    <h3 class="services-item__title">РАЗРАБОТКА ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ</h3>
+                                    <div class="services-item__text">
+                                        <strong>Полный цикл разработки, от первоначальной концепции до финального продукта, адаптированного именно под вас.</strong>
+                                        <p>Мы разработаем ПО, отвечающие вашим уникальным потребностям в обучении, тренировке, исследованиях и других задачах. Наладим разработку с нуля, начального уровня, учитывая все нюансы вашего бизнеса, рабочих процессов. Обеспечим максимальную эффективность и реалистичность.</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="violet-btn min-btn services-item__link">Запрос цены</button>
                             </div>
-                            <ul class="custom-list">
-                                <li>Тренажер-симулятор «Кибер-Сапер» (Гражданская версия)</li>
-                                <li>Начальная военная подготовка для детей и взрослых лиц</li>
-                                <li>
-                                    Курсы по повышению знаний в области безопасности
-                                    и&nbsp;антитеррористической угрозы
-                                </li>
-                            </ul>
-                            <a href="bso.html" class="violet-btn max-btn main-bso__link"
-                                >Подробнее</a
-                            >
+
+                            <img class="services-item__image" src="./images/services-image-3.webp" alt="изображение" width="618" height="352" />
                         </div>
                     </div>
                 </div>
@@ -7014,14 +6890,7 @@
                         </style>
                         <div class="banner-inner__content">
                             <div class="banner-inner__text">
-                                <p>
-                                    Проводим полный комплекс работ по обследованию и очистке
-                                    территории (разминированию) от взрывоопасных предметов (ВОП),
-                                    вывозу найденных предметов, их уничтожением в точном
-                                    соответствии с установленным законодательством регламентом и
-                                    последующим согласованием документов в соответствующих
-                                    инстанциях.
-                                </p>
+                                <p>Проводим полный комплекс работ по обследованию и очистке территории (разминированию) от взрывоопасных предметов (ВОП), вывозу найденных предметов, их уничтожением в точном соответствии с установленным законодательством регламентом и последующим согласованием документов в соответствующих инстанциях.</p>
                             </div>
                             <div>
                                 <a href="#!" class="violet-btn banner-inner__link">Подробнее</a>
@@ -7038,57 +6907,25 @@
 
                             <div class="main-about__slider">
                                 <button type="button" class="main-about-btn-prev">
-                                    <svg
-                                        width="9"
-                                        height="15"
-                                        viewBox="0 0 9 15"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M7.93549 13.7903L1.64516 7.91932L7.93549 1.62899"
-                                            stroke="#0D071E"
-                                            stroke-width="2"
-                                        />
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.93549 13.7903L1.64516 7.91932L7.93549 1.62899" stroke="#0D071E" stroke-width="2" />
                                     </svg>
                                 </button>
                                 <button type="button" class="main-about-btn-next">
-                                    <svg
-                                        width="10"
-                                        height="15"
-                                        viewBox="0 0 10 15"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M1.64516 1.62915L7.93548 7.50012L1.64516 13.7904"
-                                            stroke="#0D071E"
-                                            stroke-width="2"
-                                        />
+                                    <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.64516 1.62915L7.93548 7.50012L1.64516 13.7904" stroke="#0D071E" stroke-width="2" />
                                     </svg>
                                 </button>
                                 <div class="swiper main-about-swiper magnific-popup">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide main-about-slide">
-                                            <a href="./video/video.mp4" class="video"
-                                                ><img
-                                                    src="./images/preview.webp"
-                                                    class="main-about-preview"
-                                            /></a>
+                                            <a href="./video/video.mp4" class="video"><img src="./images/preview.webp" class="main-about-preview" /></a>
                                         </div>
                                         <div class="swiper-slide main-about-slide">
-                                            <a href="./video/video.mp4" class="video"
-                                                ><img
-                                                    src="./images/preview.webp"
-                                                    class="main-about-preview"
-                                            /></a>
+                                            <a href="./video/video.mp4" class="video"><img src="./images/preview.webp" class="main-about-preview" /></a>
                                         </div>
                                         <div class="swiper-slide main-about-slide">
-                                            <a href="./video/video.mp4" class="video"
-                                                ><img
-                                                    src="./images/preview.webp"
-                                                    class="main-about-preview"
-                                            /></a>
+                                            <a href="./video/video.mp4" class="video"><img src="./images/preview.webp" class="main-about-preview" /></a>
                                         </div>
                                     </div>
                                     <div class="main-swiper-pagination"></div>
@@ -7097,25 +6934,15 @@
                         </div>
                         <div class="grid-item">
                             <div class="main-about__text">
-                                <p>
-                                    «Центр гуманитарного разминирования и Специальных разработок» –
-                                    это слаженная команда профессионалов с высоким уровнем
-                                    подготовки, широким опытом и соответствующей квалификацией.
-                                </p>
-                                <p>
-                                    Мы специализируемся на инновационных технических разработках в
-                                    сфере образования, а также проведение мероприятий по
-                                    безопасности и антитеррористической угрозы.
-                                </p>
+                                <p>Центр гуманитарного разминирования и Специальных разработок специализируется на разработке программных решений и тренажеров-симуляторов в сфере виртуальной и дополненной реальности. ЦГР и СР входит в группу компаний с многолетним опытом в сфере ВПК и гуманитарного разминирования.</p>
                             </div>
                             <div class="main-about__info">
                                 <h4 class="main-about__info-title">Наше направление:</h4>
                                 <ul class="custom-list">
-                                    <li>Инновационные VR технологии для обучения</li>
-                                    <li>Индивидуальные и групповые курсы в Учебном Центре</li>
+                                    <li>Технологии обучения основам безопасности</li>
+                                    <li>Разработка ПО</li>
+                                    <li>Конструкторское бюро</li>
                                     <li>Гуманитарное разминирование</li>
-                                    <li>БСО (безопасная среда обитания)</li>
-                                    <li>Сотрудничество в совместных научно-технических проектах</li>
                                 </ul>
                             </div>
                         </div>
@@ -7130,50 +6957,25 @@
                         </div>
                         <div class="grid-item">
                             <div class="certificates-text">
-                                <p>
-                                    Наша организация имеет все необходимые лицензии, сертификаты и
-                                    допуски для проведения данного вида работ.
-                                </p>
+                                <p>Наша организация имеет все необходимые лицензии, сертификаты и допуски для проведения данного вида работ.</p>
                             </div>
                         </div>
                     </div>
                     <div class="certificates-list">
-                        <button type="button" class="certificates-list-btn-prev">
-                            <svg
-                                width="9"
-                                height="15"
-                                viewBox="0 0 9 15"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M7.93549 13.2905L1.64516 7.41956L7.93549 1.12924"
-                                    stroke="#0D071E"
-                                    stroke-width="2"
-                                />
+                        <button type="button" class="certificates-btn-prev certificates-list-btn-prev">
+                            <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.93549 13.2905L1.64516 7.41956L7.93549 1.12924" stroke="#0D071E" stroke-width="2" />
                             </svg>
                         </button>
-                        <button type="button" class="certificates-list-btn-next">
-                            <svg
-                                width="10"
-                                height="14"
-                                viewBox="0 0 10 14"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M1.64514 1.12891L7.93546 6.99987L1.64514 13.2902"
-                                    stroke="#0D071E"
-                                    stroke-width="2"
-                                />
+                        <button type="button" class="certificates-btn-next certificates-list-btn-next">
+                            <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.64514 1.12891L7.93546 6.99987L1.64514 13.2902" stroke="#0D071E" stroke-width="2" />
                             </svg>
                         </button>
                         <div class="swiper certificates-list-swiper magnific-popup">
                             <div class="swiper-wrapper certificates-list-wrapper">
                                 <div class="swiper-slide certificates-item">
-                                    <a
-                                        class="certificates-item__img"
-                                        href="./images/certificate.webp"
+                                    <a class="certificates-item__img" href="./images/certificate.webp"
                                         ><div class="certificates-item__img-wrapper">
                                             <!-- рекомендуемый размер изображения 262px х 376px -->
                                             <img src="./images/certificate.webp" alt="лицензия" />
@@ -7181,27 +6983,21 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide certificates-item">
-                                    <a
-                                        class="certificates-item__img"
-                                        href="./images/certificate.webp"
+                                    <a class="certificates-item__img" href="./images/certificate.webp"
                                         ><div class="certificates-item__img-wrapper">
                                             <img src="./images/certificate.webp" alt="лицензия" />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide certificates-item">
-                                    <a
-                                        class="certificates-item__img"
-                                        href="./images/certificate.webp"
+                                    <a class="certificates-item__img" href="./images/certificate.webp"
                                         ><div class="certificates-item__img-wrapper">
                                             <img src="./images/certificate.webp" alt="лицензия" />
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide certificates-item">
-                                    <a
-                                        class="certificates-item__img"
-                                        href="./images/certificate.webp"
+                                    <a class="certificates-item__img" href="./images/certificate.webp"
                                         ><div class="certificates-item__img-wrapper">
                                             <img src="./images/certificate.webp" alt="лицензия" />
                                         </div>
@@ -7214,37 +7010,17 @@
             </section>
             <section class="news section">
                 <div class="container">
-                    <div class="news-row">
+                    <div class="title-row">
                         <h2 class="title">Новости</h2>
-                        <div class="news-buttons">
-                            <button type="button" class="news-btn-prev">
-                                <svg
-                                    width="9"
-                                    height="15"
-                                    viewBox="0 0 9 15"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M7.93549 13.2905L1.64516 7.41956L7.93549 1.12924"
-                                        stroke="#0D071E"
-                                        stroke-width="2"
-                                    />
+                        <div class="swiper-buttons">
+                            <button type="button" class="swiper-btn-prev news-btn-prev">
+                                <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.93549 13.2905L1.64516 7.41956L7.93549 1.12924" stroke="#0D071E" stroke-width="2" />
                                 </svg>
                             </button>
-                            <button type="button" class="news-btn-next">
-                                <svg
-                                    width="10"
-                                    height="14"
-                                    viewBox="0 0 10 14"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1.64514 1.12891L7.93546 6.99987L1.64514 13.2902"
-                                        stroke="#0D071E"
-                                        stroke-width="2"
-                                    />
+                            <button type="button" class="swiper-btn-next news-btn-next">
+                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.64514 1.12891L7.93546 6.99987L1.64514 13.2902" stroke="#0D071E" stroke-width="2" />
                                 </svg>
                             </button>
                         </div>
@@ -7254,104 +7030,54 @@
                             <div class="swiper-slide news-slide">
                                 <article class="news-item">
                                     <!-- рекомендуемый размер изображения 389px х 224px -->
-                                    <img
-                                        class="news-item__image"
-                                        src="./images/news-item-1.webp"
-                                        alt="изображение"
-                                    />
+                                    <img class="news-item__image" src="./images/news-item-1.webp" alt="изображение" />
                                     <div class="news-item__content">
                                         <span class="news-item__content-date">01.01.2024</span>
-                                        <h3 class="news-item__content-title">
-                                            В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся
-                                            пятнадцатый
-                                        </h3>
+                                        <h3 class="news-item__content-title">В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся пятнадцатый</h3>
                                         <div class="news-item__content-text">
-                                            <p>
-                                                Центр гуманитарного разминирования и Специальных
-                                                работ приняла участие в данном событие. Среди
-                                                представленных
-                                            </p>
+                                            <p>Центр гуманитарного разминирования и Специальных работ приняла участие в данном событие. Среди представленных</p>
                                         </div>
                                     </div>
-                                    <a href="article.html" class="white-btn news-item__link"
-                                        >Подробнее</a
-                                    >
+                                    <a href="article.html" class="white-btn news-item__link">Подробнее</a>
                                 </article>
                             </div>
                             <div class="swiper-slide news-slide">
                                 <article class="news-item">
                                     <!-- рекомендуемый размер изображения 389px х 224px -->
-                                    <img
-                                        class="news-item__image"
-                                        src="./images/news-item-2.webp"
-                                        alt="изображение"
-                                    />
+                                    <img class="news-item__image" src="./images/news-item-2.webp" alt="изображение" />
                                     <div class="news-item__content">
                                         <span class="news-item__content-date">01.01.2024</span>
-                                        <h3 class="news-item__content-title">
-                                            В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся
-                                            пятнадцатый
-                                        </h3>
+                                        <h3 class="news-item__content-title">В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся пятнадцатый</h3>
                                         <div class="news-item__content-text">
-                                            <p>
-                                                Центр гуманитарного разминирования и Специальных
-                                                работ приняла участие в данном событие. Среди
-                                                представленных
-                                            </p>
+                                            <p>Центр гуманитарного разминирования и Специальных работ приняла участие в данном событие. Среди представленных</p>
                                         </div>
                                     </div>
-                                    <a href="article.html" class="white-btn news-item__link"
-                                        >Подробнее</a
-                                    >
+                                    <a href="article.html" class="white-btn news-item__link">Подробнее</a>
                                 </article>
                             </div>
                             <div class="swiper-slide news-slide">
                                 <article class="news-item">
                                     <!-- рекомендуемый размер изображения 389px х 224px -->
-                                    <img
-                                        class="news-item__image"
-                                        src="./images/news-item-3.webp"
-                                        alt="изображение"
-                                    />
+                                    <img class="news-item__image" src="./images/news-item-3.webp" alt="изображение" />
                                     <div class="news-item__content">
                                         <span class="news-item__content-date">01.01.2024</span>
-                                        <h3 class="news-item__content-title">
-                                            В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся
-                                            пятнадцатый
-                                        </h3>
+                                        <h3 class="news-item__content-title">В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся пятнадцатый</h3>
                                         <div class="news-item__content-text">
-                                            <p>
-                                                Центр гуманитарного разминирования и Специальных
-                                                работ приняла участие в данном событие. Среди
-                                                представленных
-                                            </p>
+                                            <p>Центр гуманитарного разминирования и Специальных работ приняла участие в данном событие. Среди представленных</p>
                                         </div>
                                     </div>
-                                    <a href="article.html" class="white-btn news-item__link"
-                                        >Подробнее</a
-                                    >
+                                    <a href="article.html" class="white-btn news-item__link">Подробнее</a>
                                 </article>
                             </div>
                             <div class="swiper-slide news-slide">
                                 <article class="news-item">
                                     <!-- рекомендуемый размер изображения 389px х 224px -->
-                                    <img
-                                        class="news-item__image"
-                                        src="./images/news-item-1.webp"
-                                        alt="изображение"
-                                    />
+                                    <img class="news-item__image" src="./images/news-item-1.webp" alt="изображение" />
                                     <div class="news-item__content">
                                         <span class="news-item__content-date">01.01.2024</span>
-                                        <h3 class="news-item__content-title">
-                                            В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся
-                                            пятнадцатый
-                                        </h3>
+                                        <h3 class="news-item__content-title">В период с 29 мая по 1 июня в КВЦ «Патриот» состоялся пятнадцатый</h3>
                                         <div class="news-item__content-text">
-                                            <p>
-                                                Центр гуманитарного разминирования и Специальных
-                                                работ приняла участие в данном событие. Среди
-                                                представленных
-                                            </p>
+                                            <p>Центр гуманитарного разминирования и Специальных работ приняла участие в данном событие. Среди представленных</p>
                                         </div>
                                     </div>
                                     <a href="#!" class="white-btn news-item__link">Подробнее</a>
@@ -7367,16 +7093,11 @@
                         <div class="grid-item">
                             <h2 class="title">Контакты</h2>
                             <div class="contacts-text">
-                                <p>
-                                    Общество с ограниченной ответственностью: «ЦЕНТР ГУМАНИТАРНОГО
-                                    РАЗМИНИРОВАНИЯ И СПЕЦИАЛЬНЫХ РАЗРАБОТОК»
-                                </p>
+                                <p>Общество с ограниченной ответственностью: «ЦЕНТР ГУМАНИТАРНОГО РАЗМИНИРОВАНИЯ И СПЕЦИАЛЬНЫХ РАЗРАБОТОК»</p>
                             </div>
                             <div class="contacts-info">
                                 <h3 class="contacts-title">Адрес:</h3>
-                                <address class="contacts-address">
-                                    191180, Санкт-Петербург, Загородный проспект 27
-                                </address>
+                                <address class="contacts-address">191180, Санкт-Петербург, Загородный проспект 27</address>
                                 <div class="contacts-mode">
                                     <h4 class="contacts-mode__title">Режим работы:</h4>
                                     <p class="contacts-mode__text">пн-пт: 09:00 - 18:00</p>
@@ -7386,54 +7107,26 @@
                                 <h3 class="contacts-title">Контакты:</h3>
                                 <ul class="contacts-list">
                                     <li class="contacts-list__item contacts-list__item--hover">
-                                        <svg
-                                            width="22"
-                                            height="22"
-                                            viewBox="0 0 22 22"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M8.5851 9.79193C9.4435 11.3014 10.6986 12.5565 12.2081 13.4149L13.0189 12.2798C13.2885 11.9025 13.7973 11.7859 14.2043 12.0082C15.4939 12.7126 16.919 13.1407 18.4057 13.2584C18.8824 13.2962 19.25 13.694 19.25 14.1722V18.2631C19.25 18.7331 18.8945 19.1269 18.427 19.1749C17.9413 19.2249 17.4512 19.25 16.9583 19.25C9.11129 19.25 2.75 12.8887 2.75 5.04167C2.75 4.54875 2.77514 4.05873 2.82507 3.57295C2.87311 3.10544 3.26695 2.75 3.73693 2.75H7.8278C8.30601 2.75 8.70387 3.11762 8.74161 3.59433C8.85928 5.08097 9.28739 6.50617 9.99185 7.79574C10.2141 8.2027 10.0975 8.71158 9.72024 8.98111L8.5851 9.79193ZM6.2739 9.18977L8.01552 7.94575C7.52168 6.87971 7.18326 5.74918 7.01 4.58333H4.59165C4.58611 4.73579 4.58333 4.88858 4.58333 5.04167C4.58333 11.8762 10.1239 17.4167 16.9583 17.4167C17.1114 17.4167 17.2642 17.4139 17.4167 17.4083V14.99C16.2509 14.8167 15.1203 14.4783 14.0542 13.9845L12.8102 15.7262C12.307 15.5306 11.821 15.3005 11.3551 15.0389L11.3019 15.0086C9.50556 13.9871 8.0129 12.4944 6.99142 10.6981L6.96111 10.6449C6.69945 10.179 6.46941 9.69302 6.2739 9.18977Z"
                                                 fill="#0D071E"
                                             />
                                         </svg>
-                                        <a href="tel:88129848800" class="contacts-link"
-                                            >8 812 984 88 00</a
-                                        >
+                                        <a href="tel:88129848800" class="contacts-link">8 812 984 88 00</a>
                                     </li>
                                     <li class="contacts-list__item">
                                         <div class="contacts-list__item-icons">
-                                            <a
-                                                href="https://web.telegram.org/"
-                                                class="contacts-icon__link"
-                                                target="_blank"
-                                            >
-                                                <svg
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
+                                            <a href="https://web.telegram.org/" class="contacts-icon__link" target="_blank">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.3584 9.38246C11.3857 9.78702 9.4418 10.6244 6.5266 11.8945C6.05321 12.0827 5.80524 12.2669 5.78266 12.4469C5.74451 12.7513 6.12561 12.8711 6.64458 13.0343C6.71517 13.0565 6.78832 13.0795 6.8633 13.1039C7.37388 13.2698 8.06071 13.464 8.41776 13.4717C8.74164 13.4787 9.10313 13.3452 9.50222 13.0711C12.226 11.2325 13.632 10.3032 13.7203 10.2832C13.7826 10.269 13.8689 10.2513 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9739 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4351 12.9661 11.2101 13.1853 10.9833 13.4039C10.509 13.8611 10.1533 14.204 11.003 14.764C11.8644 15.3317 12.7323 15.8982 13.5724 16.4971C13.9867 16.7925 14.359 17.0579 14.8188 17.0156C15.0861 16.991 15.3621 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.3821 16.6352 8.80083C16.6484 8.6623 16.6318 8.485 16.6185 8.40717C16.6052 8.32934 16.5773 8.21844 16.4762 8.13635C16.3563 8.03913 16.1714 8.01863 16.0887 8.02009C15.7125 8.02672 15.1355 8.22737 12.3584 9.38246Z"
                                                         fill="#0D071E"
                                                     />
                                                 </svg>
                                             </a>
-                                            <a
-                                                href="https://web.whatsapp.com/"
-                                                class="contacts-icon__link"
-                                                target="_blank"
-                                            >
-                                                <svg
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
+                                            <a href="https://web.whatsapp.com/" class="contacts-icon__link" target="_blank">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"
                                                         fill="#0D071E"
@@ -7444,21 +7137,10 @@
                                         <p>8 962 684 88 00</p>
                                     </li>
                                     <li class="contacts-list__item contacts-list__item--hover">
-                                        <svg
-                                            width="22"
-                                            height="22"
-                                            viewBox="0 0 22 22"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M19.25 2.75C19.7563 2.75 20.1667 3.16041 20.1667 3.66667V18.3394C20.1667 18.8423 19.7493 19.25 19.2575 19.25H2.74248C2.24038 19.25 1.83333 18.8422 1.83333 18.3394V17.4167H18.3333V6.69167L11 13.2917L1.83333 5.04167V3.66667C1.83333 3.16041 2.24374 2.75 2.75 2.75H19.25ZM7.33333 13.75V15.5833H0V13.75H7.33333ZM4.58333 9.16667V11H0V9.16667H4.58333ZM17.9354 4.58333H4.06463L11 10.8252L17.9354 4.58333Z"
-                                                fill="#0D071E"
-                                            />
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.25 2.75C19.7563 2.75 20.1667 3.16041 20.1667 3.66667V18.3394C20.1667 18.8423 19.7493 19.25 19.2575 19.25H2.74248C2.24038 19.25 1.83333 18.8422 1.83333 18.3394V17.4167H18.3333V6.69167L11 13.2917L1.83333 5.04167V3.66667C1.83333 3.16041 2.24374 2.75 2.75 2.75H19.25ZM7.33333 13.75V15.5833H0V13.75H7.33333ZM4.58333 9.16667V11H0V9.16667H4.58333ZM17.9354 4.58333H4.06463L11 10.8252L17.9354 4.58333Z" fill="#0D071E" />
                                         </svg>
-                                        <a href="mailto:it@cgrsr.ru" class="contacts-link"
-                                            >it@cgrsr.ru</a
-                                        >
+                                        <a href="mailto:it@cgrsr.ru" class="contacts-link">it@cgrsr.ru</a>
                                     </li>
                                 </ul>
                             </div>
@@ -7486,10 +7168,6 @@
                                 </li>
 
                                 <li>
-                                    <a href="bso.html">БСО</a>
-                                </li>
-
-                                <li>
                                     <a href="services.html">Услуги</a>
                                 </li>
                                 <li>
@@ -7509,59 +7187,30 @@
                     </div>
 
                     <div class="footer-top__info">
-                        <div class="footer-top__info-text">
-                            Общество с ограниченной ответственностью: <br />
-                            «ЦЕНТР ГУМАНИТАРНОГО РАЗМИНИРОВАНИЯ И СПЕЦИАЛЬНЫХ РАЗРАБОТОК»
-                        </div>
+                        <div class="footer-top__info-text">Общество с ограниченной ответственностью: «ЦЕНТР ГУМАНИТАРНОГО РАЗМИНИРОВАНИЯ И СПЕЦИАЛЬНЫХ РАЗРАБОТОК»</div>
                         <div class="footer-top__info-socials">
                             <p class="footer-top__info-title">Связаться с нами:</p>
                             <div class="footer-top__info-social">
                                 <div class="footer-top__info-item footer-top__info-hover">
-                                    <svg
-                                        width="22"
-                                        height="22"
-                                        viewBox="0 0 22 22"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M8.5851 9.79193C9.4435 11.3014 10.6986 12.5565 12.2081 13.4149L13.0189 12.2798C13.2885 11.9025 13.7973 11.7859 14.2043 12.0082C15.4939 12.7126 16.919 13.1407 18.4057 13.2584C18.8824 13.2962 19.25 13.694 19.25 14.1722V18.2631C19.25 18.7331 18.8945 19.1269 18.427 19.1749C17.9413 19.2249 17.4512 19.25 16.9583 19.25C9.11129 19.25 2.75 12.8887 2.75 5.04167C2.75 4.54875 2.77514 4.05873 2.82507 3.57295C2.87311 3.10544 3.26695 2.75 3.73693 2.75H7.8278C8.30601 2.75 8.70387 3.11762 8.74161 3.59433C8.85928 5.08097 9.28739 6.50617 9.99185 7.79574C10.2141 8.2027 10.0975 8.71158 9.72024 8.98111L8.5851 9.79193ZM6.2739 9.18977L8.01552 7.94575C7.52168 6.87971 7.18326 5.74918 7.01 4.58333H4.59165C4.58611 4.73579 4.58333 4.88858 4.58333 5.04167C4.58333 11.8762 10.1239 17.4167 16.9583 17.4167C17.1114 17.4167 17.2642 17.4139 17.4167 17.4083V14.99C16.2509 14.8167 15.1203 14.4783 14.0542 13.9845L12.8102 15.7262C12.307 15.5306 11.821 15.3005 11.3551 15.0389L11.3019 15.0086C9.50556 13.9871 8.0129 12.4944 6.99142 10.6981L6.96111 10.6449C6.69945 10.179 6.46941 9.69302 6.2739 9.18977Z"
                                             fill="#0D071E"
                                         />
                                     </svg>
-                                    <a href="tel:88129848800" class="footer-top__info-link"
-                                        >8 812 984 88 00</a
-                                    >
+                                    <a href="tel:88129848800" class="footer-top__info-link">8 812 984 88 00</a>
                                 </div>
                                 <div class="footer-top__info-item">
                                     <div class="footer-top__info-icons">
-                                        <a
-                                            href="https://web.whatsapp.com/"
-                                            class="footer-top__info-icon"
-                                            target="_blank"
-                                            ><svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
+                                        <a href="https://web.whatsapp.com/" class="footer-top__info-icon" target="_blank"
+                                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.3584 9.38246C11.3857 9.78702 9.4418 10.6244 6.5266 11.8945C6.05321 12.0827 5.80524 12.2669 5.78266 12.4469C5.74451 12.7513 6.12561 12.8711 6.64458 13.0343C6.71517 13.0565 6.78832 13.0795 6.8633 13.1039C7.37388 13.2698 8.06071 13.464 8.41776 13.4717C8.74164 13.4787 9.10313 13.3452 9.50222 13.0711C12.226 11.2325 13.632 10.3032 13.7203 10.2832C13.7826 10.269 13.8689 10.2513 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9739 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4351 12.9661 11.2101 13.1853 10.9833 13.4039C10.509 13.8611 10.1533 14.204 11.003 14.764C11.8644 15.3317 12.7323 15.8982 13.5724 16.4971C13.9867 16.7925 14.359 17.0579 14.8188 17.0156C15.0861 16.991 15.3621 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.3821 16.6352 8.80083C16.6484 8.6623 16.6318 8.485 16.6185 8.40717C16.6052 8.32934 16.5773 8.21844 16.4762 8.13635C16.3563 8.03913 16.1714 8.01863 16.0887 8.02009C15.7125 8.02672 15.1355 8.22737 12.3584 9.38246Z"
                                                     fill="#0D071E"
                                                 /></svg
                                         ></a>
-                                        <a
-                                            href="https://web.telegram.org/"
-                                            class="footer-top__info-icon"
-                                            target="_blank"
-                                            ><svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
+                                        <a href="https://web.telegram.org/" class="footer-top__info-icon" target="_blank"
+                                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"
                                                     fill="#0D071E"
@@ -7571,58 +7220,28 @@
                                     <p>8 962 684 88 00</p>
                                 </div>
                                 <div class="footer-top__info-item footer-top__info-hover">
-                                    <svg
-                                        width="22"
-                                        height="22"
-                                        viewBox="0 0 22 22"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M19.25 2.75C19.7563 2.75 20.1667 3.16041 20.1667 3.66667V18.3394C20.1667 18.8423 19.7493 19.25 19.2575 19.25H2.74248C2.24038 19.25 1.83333 18.8422 1.83333 18.3394V17.4167H18.3333V6.69167L11 13.2917L1.83333 5.04167V3.66667C1.83333 3.16041 2.24374 2.75 2.75 2.75H19.25ZM7.33333 13.75V15.5833H0V13.75H7.33333ZM4.58333 9.16667V11H0V9.16667H4.58333ZM17.9354 4.58333H4.06463L11 10.8252L17.9354 4.58333Z"
-                                            fill="#0D071E"
-                                        />
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.25 2.75C19.7563 2.75 20.1667 3.16041 20.1667 3.66667V18.3394C20.1667 18.8423 19.7493 19.25 19.2575 19.25H2.74248C2.24038 19.25 1.83333 18.8422 1.83333 18.3394V17.4167H18.3333V6.69167L11 13.2917L1.83333 5.04167V3.66667C1.83333 3.16041 2.24374 2.75 2.75 2.75H19.25ZM7.33333 13.75V15.5833H0V13.75H7.33333ZM4.58333 9.16667V11H0V9.16667H4.58333ZM17.9354 4.58333H4.06463L11 10.8252L17.9354 4.58333Z" fill="#0D071E" />
                                     </svg>
-                                    <a href="mailto:it@cgrsr.ru" class="footer-top__info-link"
-                                        >it@cgrsr.ru</a
-                                    >
+                                    <a href="mailto:it@cgrsr.ru" class="footer-top__info-link">it@cgrsr.ru</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <div class="footer-bottom__copy">
-                        © 2024 ООО “Центр Гуманитарного разминирования и специальных разработок”
-                    </div>
+                    <div class="footer-bottom__copy">© 2024 ООО “Центр Гуманитарного разминирования и специальных разработок”</div>
                     <a href="#!" class="footer-bottom__link">Правила пользования сайтом</a>
                 </div>
             </div>
         </footer>
         <!-- модальное окно - "заказать звонок" -->
         <div class="modal mini-modal" id="call">
-            <div
-                class="modal-content mini-modal-content violet-modal-content"
-                style="background-image: url('./images/mini-modal.jpg')"
-            >
+            <div class="modal-content mini-modal-content violet-modal-content" style="background-image: url('./images/mini-modal.jpg')">
                 <button type="button" class="modal-close">
-                    <svg
-                        width="25"
-                        height="21"
-                        viewBox="0 0 25 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M6.36395 1.63623L19.0919 14.3642"
-                            stroke="white"
-                            stroke-width="2"
-                        />
-                        <path
-                            d="M6.36395 14.3638L19.0919 1.63585"
-                            stroke="white"
-                            stroke-width="2"
-                        />
+                    <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.36395 1.63623L19.0919 14.3642" stroke="white" stroke-width="2" />
+                        <path d="M6.36395 14.3638L19.0919 1.63585" stroke="white" stroke-width="2" />
                     </svg>
                 </button>
                 <div class="modal-container mini-modal-container">
@@ -7630,89 +7249,40 @@
                     <div class="modal-subtitle">
                         <p>Пожалуйста, заполните анкету и наш менеджер свяжется с вами</p>
                     </div>
-                    <form
-                        action="#!"
-                        method="post"
-                        class="modal-form mini-modal-form"
-                        id="call-form"
-                    >
+                    <form action="#!" method="post" class="modal-form mini-modal-form" id="call-form">
                         <div class="modal-form__wrapper mini-modal-form__wrapper">
-                            <input
-                                class="modal-form__input"
-                                type="text"
-                                name="call-name"
-                                id="call-name"
-                                placeholder="Ваше ФИО"
-                            />
+                            <input class="modal-form__input" type="text" name="call-name" id="call-name" placeholder="Ваше ФИО" />
                             <span class="error">Введите ваши ФИО</span>
                         </div>
                         <div class="modal-form__wrapper mini-modal-form__wrapper">
-                            <input
-                                class="modal-form__input"
-                                type="text"
-                                name="call-phone"
-                                id="call-phone"
-                                data-tel-input
-                                placeholder="Номер телефона"
-                            />
+                            <input class="modal-form__input" type="text" name="call-phone" id="call-phone" data-tel-input placeholder="Номер телефона" />
                             <span class="error">Введите ваш номер телефона</span>
                         </div>
-                        <div
-                            class="modal-form__wrapper mini-modal-form__wrapper mini-modal-form__select"
-                        >
-                            <select
-                                class="modal-select"
-                                data-placeholder="Здесь вы можете оставить цель вашего обращения"
-                            >
+                        <div class="modal-form__wrapper mini-modal-form__wrapper mini-modal-form__select">
+                            <select class="modal-select" data-placeholder="Здесь вы можете оставить цель вашего обращения">
                                 <option value="" selected>select</option>
                                 <option value="Заказ VR-симулятора">Заказ VR-симулятора</option>
                                 <option value="Обучение">Обучение</option>
-                                <option value="Гуманитарное разминирование">
-                                    Гуманитарное разминирование
-                                </option>
-                                <option value="БСО (безопасная среда обитания)">
-                                    БСО (безопасная среда обитания)
-                                </option>
+                                <option value="Гуманитарное разминирование">Гуманитарное разминирование</option>
+                                <option value="БСО (безопасная среда обитания)">БСО (безопасная среда обитания)</option>
                             </select>
                             <span class="error">Выберите цель вашего обращения</span>
                         </div>
                         <div class="modal-form__info mini-modal-form__info">
-                            <p>
-                                Нажимая на кнопку "Отправить заявку” вы подтверждаете своё согласие
-                                с политикой конфиденциальности сайта
-                            </p>
+                            <p>Нажимая на кнопку "Отправить заявку” вы подтверждаете своё согласие с политикой конфиденциальности сайта</p>
                         </div>
-                        <button type="submit" class="modal-submit mini-modal-submit">
-                            Отправить заявку
-                        </button>
+                        <button type="submit" class="modal-submit mini-modal-submit">Отправить заявку</button>
                     </form>
                 </div>
             </div>
         </div>
         <!-- модальное окно - благодарность после успешной отправки "заказать звонок" -->
         <div class="modal mini-modal" id="call-success">
-            <div
-                class="modal-content mini-modal-content violet-modal-content"
-                style="background-image: url('./images/mini-modal.jpg')"
-            >
+            <div class="modal-content mini-modal-content violet-modal-content" style="background-image: url('./images/mini-modal.jpg')">
                 <button type="button" class="modal-close">
-                    <svg
-                        width="25"
-                        height="21"
-                        viewBox="0 0 25 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M6.36395 1.63623L19.0919 14.3642"
-                            stroke="white"
-                            stroke-width="2"
-                        />
-                        <path
-                            d="M6.36395 14.3638L19.0919 1.63585"
-                            stroke="white"
-                            stroke-width="2"
-                        />
+                    <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.36395 1.63623L19.0919 14.3642" stroke="white" stroke-width="2" />
+                        <path d="M6.36395 14.3638L19.0919 1.63585" stroke="white" stroke-width="2" />
                     </svg>
                 </button>
                 <div class="modal-container mini-modal-container">
@@ -7742,100 +7312,45 @@
                     }
                 </style>
                 <button type="button" class="modal-close max-modal-close">
-                    <svg
-                        width="25"
-                        height="21"
-                        viewBox="0 0 25 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M6.36395 1.63623L19.0919 14.3642"
-                            stroke="white"
-                            stroke-width="2"
-                        />
-                        <path
-                            d="M6.36395 14.3638L19.0919 1.63585"
-                            stroke="white"
-                            stroke-width="2"
-                        />
+                    <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.36395 1.63623L19.0919 14.3642" stroke="white" stroke-width="2" />
+                        <path d="M6.36395 14.3638L19.0919 1.63585" stroke="white" stroke-width="2" />
                     </svg>
                 </button>
                 <div class="modal-container max-modal-container">
-                    <h3 class="modal-title max-modal-title">
-                        Обучение и подготовка разминированию в новых информационных технологиях VR
-                    </h3>
+                    <h3 class="modal-title max-modal-title">Обучение и подготовка разминированию в новых информационных технологиях VR</h3>
                     <div class="modal-subtitle">
                         <p>Пожалуйста, заполните анкету и наш менеджер свяжется с вами</p>
                     </div>
-                    <form
-                        action="#!"
-                        method="post"
-                        class="modal-form max-modal-form violet-modal-form"
-                        id="bid-form"
-                    >
+                    <form action="#!" method="post" class="modal-form max-modal-form violet-modal-form" id="bid-form">
                         <div class="max-modal-inputs">
                             <div class="modal-form__wrapper max-modal-form__wrapper">
-                                <input
-                                    class="modal-form__input"
-                                    type="text"
-                                    name="bid-name"
-                                    id="bid-name"
-                                    placeholder="Ваше ФИО"
-                                />
+                                <input class="modal-form__input" type="text" name="bid-name" id="bid-name" placeholder="Ваше ФИО" />
                                 <span class="error">Введите ваши ФИО</span>
                             </div>
                             <div class="modal-form__wrapper max-modal-form__wrapper">
-                                <input
-                                    class="modal-form__input"
-                                    type="text"
-                                    name="bid-phone"
-                                    id="bid-phone"
-                                    data-tel-input
-                                    placeholder="Номер телефона"
-                                />
+                                <input class="modal-form__input" type="text" name="bid-phone" id="bid-phone" data-tel-input placeholder="Номер телефона" />
                                 <span class="error">Введите ваш номер телефона</span>
                             </div>
                             <div class="modal-form__wrapper max-modal-form__wrapper">
-                                <input
-                                    class="modal-form__input"
-                                    type="email"
-                                    name="bid-mail"
-                                    id="bid-mail"
-                                    placeholder="Эл.почта"
-                                />
+                                <input class="modal-form__input" type="email" name="bid-mail" id="bid-mail" placeholder="Эл.почта" />
                                 <span class="error">Введите вашу эл.почту</span>
                             </div>
                             <div class="modal-form__wrapper max-modal-form__wrapper">
-                                <select
-                                    class="modal-select"
-                                    data-placeholder="Здесь вы можете оставить цель вашей заявки"
-                                >
+                                <select class="modal-select" data-placeholder="Здесь вы можете оставить цель вашей заявки">
                                     <option value="" selected>select</option>
                                     <option value="Заказ VR-симулятора">Заказ VR-симулятора</option>
                                     <option value="Обучение">Обучение</option>
-                                    <option value="Гуманитарное разминирование">
-                                        Гуманитарное разминирование
-                                    </option>
-                                    <option value="БСО (безопасная среда обитания)">
-                                        БСО (безопасная среда обитания)
-                                    </option>
+                                    <option value="Гуманитарное разминирование">Гуманитарное разминирование</option>
+                                    <option value="БСО (безопасная среда обитания)">БСО (безопасная среда обитания)</option>
                                 </select>
                                 <span class="error">Выберите цель вашей заявки</span>
                             </div>
                         </div>
                         <div class="modal-form__info violet-modal-form__info">
-                            <p>
-                                Нажимая на кнопку "Отправить заявку” вы подтверждаете своё согласие
-                                с политикой конфиденциальности сайта
-                            </p>
+                            <p>Нажимая на кнопку "Отправить заявку” вы подтверждаете своё согласие с политикой конфиденциальности сайта</p>
                         </div>
-                        <button
-                            type="submit"
-                            class="modal-submit max-modal-submit violet-modal-submit"
-                        >
-                            Отправить заявку
-                        </button>
+                        <button type="submit" class="modal-submit max-modal-submit violet-modal-submit">Отправить заявку</button>
                     </form>
                 </div>
             </div>
@@ -7854,23 +7369,9 @@
                     }
                 </style>
                 <button type="button" class="modal-close max-modal-close">
-                    <svg
-                        width="25"
-                        height="21"
-                        viewBox="0 0 25 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M6.36395 1.63623L19.0919 14.3642"
-                            stroke="white"
-                            stroke-width="2"
-                        />
-                        <path
-                            d="M6.36395 14.3638L19.0919 1.63585"
-                            stroke="white"
-                            stroke-width="2"
-                        />
+                    <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.36395 1.63623L19.0919 14.3642" stroke="white" stroke-width="2" />
+                        <path d="M6.36395 14.3638L19.0919 1.63585" stroke="white" stroke-width="2" />
                     </svg>
                 </button>
                 <div class="modal-container max-modal-container">
@@ -7893,13 +7394,7 @@
                     <div class="presentation-content__top">
                         <h2 class="presentation-content__title">Скачать презентацию</h2>
                         <button type="button" class="presentation-close">
-                            <svg
-                                width="14"
-                                height="17"
-                                viewBox="0 0 14 17"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
+                            <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     fill-rule="evenodd"
                                     clip-rule="evenodd"
@@ -7958,52 +7453,22 @@
         <!-- анимация  -->
         <div class="animation">
             <div class="animation-menu close">
-                <a
-                    target="_blank"
-                    href="mailto:cgrsr@mail.ru"
-                    class="animation-menu__item"
-                    style="background: #ff6540"
-                >
+                <a target="_blank" href="mailto:cgrsr@mail.ru" class="animation-menu__item" style="background: #ff6540">
                     <img src="./images/icons/mail.svg" alt="иконка" />
                 </a>
-                <a
-                    target="_blank"
-                    href="https://api.whatsapp.com/send?phone=79062521415"
-                    class="animation-menu__item"
-                    style="background: #1cb74b"
-                >
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=79062521415" class="animation-menu__item" style="background: #1cb74b">
                     <img src="./images/icons/whatsapp.svg" alt="иконка" />
                 </a>
-                <a
-                    target="_blank"
-                    href="https://t.me/cgrsr1"
-                    class="animation-menu__item"
-                    style="background: #01afdc"
-                >
+                <a target="_blank" href="https://t.me/cgrsr1" class="animation-menu__item" style="background: #01afdc">
                     <img src="./images/icons/telegram.svg" alt="иконка" />
                 </a>
-                <a
-                    target="_blank"
-                    href="https://vk.com/razminirovanie"
-                    class="animation-menu__item"
-                    style="background: #43668c"
-                >
+                <a target="_blank" href="https://vk.com/razminirovanie" class="animation-menu__item" style="background: #43668c">
                     <img src="./images/icons/vk.svg" alt="иконка" />
                 </a>
-                <a
-                    target="_blank"
-                    href="https://www.youtube.com/@cgrsrRF"
-                    class="animation-menu__item"
-                    style="background: #da201e"
-                >
+                <a target="_blank" href="https://www.youtube.com/@cgrsrRF" class="animation-menu__item" style="background: #da201e">
                     <img src="./images/icons/youtube.svg" alt="иконка" />
                 </a>
-                <a
-                    target="_blank"
-                    href="https://rutube.ru/channel/34380353/videos/"
-                    class="animation-menu__item"
-                    style="background: #100942"
-                >
+                <a target="_blank" href="https://rutube.ru/channel/34380353/videos/" class="animation-menu__item" style="background: #100942">
                     <img src="./images/icons/rutube.svg" alt="иконка" />
                 </a>
             </div>
@@ -8013,26 +7478,10 @@
                         <img src="./images/icons/social-static.svg" alt="иконка" />
                     </div>
                     <div class="animation-element__movement">
-                        <img
-                            class="animation-element__movement-icon"
-                            src="./images/icons/social-movement-1.svg"
-                            alt="иконка"
-                        />
-                        <img
-                            class="animation-element__movement-icon"
-                            src="./images/icons/social-movement-2.svg"
-                            alt="иконка"
-                        />
-                        <img
-                            class="animation-element__movement-icon"
-                            src="./images/icons/social-movement-3.svg"
-                            alt="иконка"
-                        />
-                        <img
-                            class="animation-element__movement-icon last"
-                            src="./images/icons/social-movement-4.svg"
-                            alt="иконка"
-                        />
+                        <img class="animation-element__movement-icon" src="./images/icons/social-movement-1.svg" alt="иконка" />
+                        <img class="animation-element__movement-icon" src="./images/icons/social-movement-2.svg" alt="иконка" />
+                        <img class="animation-element__movement-icon" src="./images/icons/social-movement-3.svg" alt="иконка" />
+                        <img class="animation-element__movement-icon last" src="./images/icons/social-movement-4.svg" alt="иконка" />
                     </div>
                 </div>
                 <div class="animation-element__close no-active">
