@@ -3697,6 +3697,7 @@ textarea.modal-form__input {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     margin-bottom: 20px;
+    line-height: 125%;
 }
 .modules-list__item-title {
     font-weight: 500;
@@ -3708,7 +3709,7 @@ textarea.modal-form__input {
 .modules-list__item-description {
     font-weight: 300;
     font-size: 16px;
-    line-height: 125%;
+    display: inline;
     letter-spacing: 0.012rem;
 }
 .modules-list__item-description p + p {
@@ -4204,8 +4205,10 @@ textarea.modal-form__input {
     height: 46px;
 }
 .news--partners .modules-list__item-description {
-    line-height: 136%;
     letter-spacing: 0.005rem;
+}
+.news--partners .modules-list__item-content {
+    line-height: 136%;
 }
 @media (max-width: 1400px) {
     .certificates-list-btn-prev {
@@ -6462,7 +6465,9 @@ textarea.modal-form__input {
     }
     .modules-list__item-description {
         font-size: 13px;
-        line-height: 131%;
+    }
+    .modules-list__item-content {
+        line-height: 104%;
     }
     .modules {
         padding: 11px 0 36px;
@@ -6473,8 +6478,10 @@ textarea.modal-form__input {
     }
 
     .news--partners .modules-list__item-description {
-        line-height: 130%;
         letter-spacing: 0.003rem;
+    }
+    .news--partners .modules-list__item-content {
+        line-height: 130%;
     }
     .information-content {
         margin-top: 22px;
