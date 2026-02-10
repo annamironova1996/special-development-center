@@ -57,7 +57,6 @@ $(document).ready(function () {
             nextEl: '.main-about-btn-next',
             prevEl: '.main-about-btn-prev',
         },
-        effect: 'fade',
         pagination: {
             el: '.main-swiper-pagination',
             clickable: true,
@@ -560,7 +559,6 @@ $(document).ready(function () {
                 nextEl: $nextBtn[0],
                 prevEl: $prevBtn[0],
             },
-            effect: 'fade',
             pagination: {
                 el: $pagination[0],
                 clickable: true,

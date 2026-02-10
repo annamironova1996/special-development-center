@@ -401,13 +401,12 @@ button.violet-btn {
     display: flex;
     border-radius: 8px;
     width: 100%;
-    height: 100%;
-    max-height: 352px;
+    height: 352px;
+    overflow: hidden;
 }
 .services-item__slide img {
-    border-radius: inherit;
-    height: auto;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -1732,7 +1731,7 @@ button.mfp-arrow {
 .service .services-item__title {
     font-family: 'Noto Serif', sans-serif;
     font-weight: 700;
-    letter-spacing: 0.035rem;
+    letter-spacing: 0;
     line-height: 131%;
     margin-top: -8px;
 }
@@ -4222,6 +4221,9 @@ textarea.modal-form__input {
 .news--partners .modules-list__item-content {
     line-height: 136%;
 }
+.slider {
+    overflow: hidden;
+}
 @media (max-width: 1400px) {
     .certificates-list-btn-prev {
         left: -10px;
@@ -4906,6 +4908,9 @@ textarea.modal-form__input {
     .module-button {
         margin-top: 20px;
     }
+    .services-item__slide {
+        height: 293px;
+    }
 }
 @media (max-width: 1090px) {
     .certificates-item__img-wrapper img {
@@ -4952,11 +4957,8 @@ textarea.modal-form__input {
         width: 100% !important;
         height: auto;
     }
-    .services-item__slide img {
-        width: 100%;
-    }
     .services-item__slide {
-        max-height: 45vw;
+        height: 45vw;
     }
     .grid-container {
         display: -webkit-box;
@@ -6618,7 +6620,7 @@ textarea.modal-form__input {
         overflow: visible;
     }
     .services-item__slide {
-        max-height: 50vw;
+        height: 50vw;
     }
 }
 @media (max-width: 370px) {
