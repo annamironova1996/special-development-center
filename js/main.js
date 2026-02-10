@@ -547,13 +547,13 @@ $(document).ready(function () {
     });
 
     $('.slider').each(function (index) {
-        var $slider = $(this);
+        let $slider = $(this);
+        let $nextBtn = $slider.find('.slider__button-next');
+        let $prevBtn = $slider.find('.slider__button-prev');
+        let $pagination = $slider.find('.slider-swiper-pagination');
 
-        var $nextBtn = $slider.find('.slider__button-next');
-        var $prevBtn = $slider.find('.slider__button-prev');
-        var $pagination = $slider.find('.slider-swiper-pagination');
-
-        new Swiper(this, {
+        // Создаем слайдер БЕЗ автовоспроизведения
+        let swiper = new Swiper(this, {
             slidesPerView: 1,
             spaceBetween: 0,
             navigation: {
@@ -565,7 +565,41 @@ $(document).ready(function () {
                 el: $pagination[0],
                 clickable: true,
             },
+
+            autoplay: false,
+
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+
+            on: {
+                init: function () {
+                    this.autoplay.stop();
+                },
+            },
         });
+
+        let observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        swiper.autoplay.start();
+                        console.log('Слайдер виден - автовоспроизведение запущено');
+                    } else {
+                        swiper.autoplay.stop();
+                        console.log('Слайдер не виден - автовоспроизведение остановлено');
+                    }
+                });
+            },
+            {
+                root: null,
+                threshold: 0.5,
+                rootMargin: '0px',
+            }
+        );
+
+        observer.observe(this);
     });
 
     const scopeSwiper = new Swiper('.scope-swiper', {
